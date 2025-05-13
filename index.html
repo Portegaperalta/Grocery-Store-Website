@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- required meta tags -->
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-dropdown-button">
+            <i id="dropDownMenuBtN" class="fa-solid fa-bars"></i>
+        </div>
+        <div class="header-company-logo">
+            <p>Grocery<span>Store</span></p>
+        </div>
+        <div class="header-search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="search" id="headerSearchInput" placeholder="Try 'meat and vegies'">
+        </div>
+        <div class="header-zipcode">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>94105</p>
+        </div>
+        <div class="header-shopping-cart">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p id="itemsInCartNumber">0</p>
+        </div>
+    </header>
+    <main>
+        <div class="dropdown-menu-left">
+            <div class="dropdown-menu-left-navbar">
+                <nav>
+                    <ul>
+                        <li><a href="#">
+                                <i class="fa-solid fa-house"></i>
+                                <p>Shop</p>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa-solid fa-bag-shopping"></i>
+                                <p>Buy it again</p>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa-solid fa-book-bookmark"></i>
+                                <p>Recipes</p>
+                            </a></li>
+                        <li><a href="#">
+                                <i class="fa-solid fa-list-ul"></i>
+                                <p>Lists</p>
+                            </a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="dropdown-menu-aisles">
+                <h2>Browse aisles</h2>
+                <ul class="li"><a href="#">Beverages</a></ul>
+                <ul class="li"><a href="#">Snacks & Candy</a></ul>
+                <ul class="li"><a href="#">Dairy & Eggs</a></ul>
+                <ul class="li"><a href="#">Frozen</a></ul>
+                <ul class="li"><a href="#">Bakery</a></ul>
+                <ul class="li"><a href="#">Deli</a></ul>
+                <ul class="li"><a href="#">Meat & Seafood</a></ul>
+                <ul class="li"><a href="#">Liquor</a></ul>
+                <ul class="li"><a href="#">Kitchen Supplies</a></ul>
+            </div>
+        </div>
+    </main>
+
+    <!-- custom js -->
+    <script src="app.js"></script>
+
+    <!-- fontAwesom js -->
+    <script src="https://kit.fontawesome.com/389cdbd17f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
