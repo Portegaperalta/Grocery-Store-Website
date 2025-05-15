@@ -15,6 +15,8 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 ul {
@@ -81,4 +83,98 @@ header {
 .header-shopping-cart p {
     margin: 0px;
     font-weight: 600;
+}
+
+.dropdown-menu-left {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+}
+
+.dropdown-menu-profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.dropdown-menu-username {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.dropdown-menu-username h2 {
+    color: var(--gray-dark);
+}
+
+.user-profile-pic {
+    max-width: 50px;
+    max-height: 50px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.user-join-date p {
+    color: #808082;
+    font-weight: 600;
+}
+
+.dropdown-menu-promos {
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid var(--gray-text);
+    margin-bottom: 20px;
+}
+
+.promo-delivery {
+    background-color: var(--pastel);
+    text-align: center;
+    border-radius: 5px;
+}
+
+.promo-delivery h2 {
+    color: var(--purple);
+    font-size: 1.3rem;
+    padding-top: 10px;
+}
+
+.promo-delivery p {
+    color: var(--purple);
+    width: 100%;
+    max-width: 250px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+
+.promo-trial {
+    background-color: var(--purple);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.promo-trial a {
+    text-decoration: none;
+}
+
+.promo-trial h2 {
+    color: var(--pastel);
+    width: 100%;
+    max-width: 200px;
+}
+
+.promo-trial p {
+    color: var(--pastel);
+}
+
+.promo-trial p:nth-child(3) {
+    color: var(--purple);
+    border: 1px solid var(--pastel);
+    background-color: var(--pastel);
+    font-weight: 600;
+    padding: 3px;
+    border-radius: 10px;
 }
