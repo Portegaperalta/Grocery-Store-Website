@@ -1,9 +1,81 @@
 :root {
-    --green: ;
+    --green: rgb(16, 137, 16);
     --green-dark: #0A610A;
-    --gray-dark:
+    --gray-dark: #242529;
+    --gray-light: #F6F7F8;
+    --gray-hover: #E8E9EB;
+    --gray-text: #7C7E80;
+    --gray-search: #F6F7F8;
+    --white: #FFFFFF;
+    --yellow: #FFDC23;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    list-style-type: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#dropDownMenuBtN {
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.header-company-logo p {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.header-company-logo p span {
+    color: var(--green);
+}
+
+.header-search {
+    background-color: var(--gray-search);
+    padding: 10px 30px 10px 0px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+#headerSearchInput {
+    background-color: var(--gray-search);
+    border: none;
+}
+
+.header-zipcode {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header-zipcode p {
+    font-weight: 500;
+}
+
+.header-shopping-cart {
+    color: var(--gray-dark);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: var(--gray-light);
+    padding: 15px 25px;
+    border-radius: 25px;
+}
+
+.header-shopping-cart i {
+    font-size: 1.2rem;
+}
+
+.header-shopping-cart p {
+    margin: 0px;
+    font-weight: 600;
 }
