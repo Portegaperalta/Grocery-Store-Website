@@ -97,6 +97,8 @@ header {
     box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
     padding: 20px;
     position: absolute;
+    z-index: 100;
+    scrollbar-width: thin;
 }
 
 .dropdown-menu-left-hide {
@@ -413,4 +415,98 @@ header {
     font-weight: 600;
     margin: 0;
     padding: 0;
+}
+
+.fresh-vegetables-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fresh-vegetables-title h2 {
+    font-size: 1.7rem;
+}
+
+.products-navigation {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 40px;
+}
+
+.products-viewall-link {
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.products-viewall-link:active {
+    background-color: var(--gray-hover);
+}
+
+.products-viewall-link a {
+    color: var(--gray-dark);
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.products-navigation-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navigation-button-left {
+    background-color: var(--gray-search);
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.navigation-button-left:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.navigation-button-right {
+    background-color: var(--gray-search);
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.navigation-button-right:hover {
+    color: var(--white);
+    background-color: var(--green);
+}
+
+.grocery-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.grocery-box-top {
+    position: relative;
+}
+
+#addToCartBtn {
+    position: absolute;
+    top: 20px;
+    left: 140px;
+    color: var(--white);
+    border: 2px solid var(--green);
+    font-weight: 600;
+    font-size: .9rem;
+    border-radius: 20px;
+    padding: 10px 15px;
+    background-color: var(--green);
+    cursor: pointer;
+}
+
+#addToCartBtn i {
+    margin-right: 8px;
+}
+
+#addToCartBtn:hover {
+    background-color: var(--green-dark);
 }
