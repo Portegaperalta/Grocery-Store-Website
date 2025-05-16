@@ -424,6 +424,7 @@ header {
 }
 
 .fresh-vegetables-title h2 {
+    color: var(--gray-dark);
     font-size: 1.7rem;
 }
 
@@ -480,9 +481,23 @@ header {
     background-color: var(--green);
 }
 
+.fresh-vegetables-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 30px;
+}
+
 .grocery-box {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    padding: 5px;
+}
+
+.grocery-box a {
+    text-decoration: none;
 }
 
 .grocery-box-top {
@@ -491,6 +506,7 @@ header {
 
 #addToCartBtn {
     position: absolute;
+    display: flex;
     top: 20px;
     left: 140px;
     color: var(--white);
@@ -509,4 +525,63 @@ header {
 
 #addToCartBtn:hover {
     background-color: var(--green-dark);
+}
+
+.grocery-price {
+    display: flex;
+    flex-direction: row;
+    gap: 3px;
+}
+
+.grocery-price p {
+    color: var(--gray-dark);
+    margin: 0;
+}
+
+.price-currency {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 1.7rem;
+}
+
+.price-cent {
+    font-size: 1.2rem;
+}
+
+.grocery-name p {
+    color: var(--gray-dark);
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 150px;
+}
+
+.grocery-amount p {
+    color: var(--gray-text);
+    font-weight: 600;
+    margin-top: 0px;
+}
+
+.grocery-stock p {
+    color: var(--gray-dark);
+    font-weight: 600;
+}
+
+.grocery-stock p i {
+    color: var(--green);
+    margin-right: 5px;
+}
+
+.fresh-fruit-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fresh-fruit-title h2 {
+    color: var(--gray-dark);
+    font-size: 1.7rem;
 }
