@@ -46,6 +46,7 @@ header {
 }
 
 .header-search {
+    position: relative;
     background-color: var(--gray-search);
     padding: 10px 30px 10px 0px;
     border-radius: 5px;
@@ -113,6 +114,31 @@ header {
     font-weight: 600;
 }
 
+.header-search-more {
+    top: 45px;
+    position: absolute;
+    background-color: var(--white);
+    width: 100%;
+    height: 55vh;
+    max-width: 700px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.10);
+    border-radius: 10px;
+    overflow-y: scroll;
+    z-index: 100;
+}
+
+.header-search-more-show {
+    display: flex;
+}
+
+.header-search-more-hidden {
+    display: none;
+}
+
 .header-search-more-suggestions {
     cursor: pointer;
     display: flex;
@@ -144,6 +170,70 @@ header {
     font-size: 1.3rem;
     font-weight: 600;
     color: var(--gray-dark);
+}
+
+.header-more-popular-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header-more-popular-items a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+
+.popular-item {
+    background-color: var(--gray-light);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px 120px 5px 10px;
+}
+
+.popular-item:hover {
+    background-color: var(--gray-hover);
+}
+
+.popular-item-img img {
+    width: 100%;
+    max-width: 60px;
+    border-radius: 15px;
+}
+
+.header-more-recommended-title h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--gray-dark);
+}
+
+.header-more-recommended-items {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.header-more-recommended-items a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+
+.recommended-item {
+    background-color: var(--gray-light);
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 5px 120px 5px 10px;
+}
+
+.recommended-item-img img {
+    width: 100%;
+    max-width: 60px;
+    border-radius: 15px;
 }
 
 .dropdown-menu-left {
@@ -476,6 +566,10 @@ header {
     font-weight: 600;
     margin: 0;
     padding: 0;
+}
+
+.main-content {
+    position: relative;
 }
 
 #mainContentAdd {

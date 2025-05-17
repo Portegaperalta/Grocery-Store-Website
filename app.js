@@ -1,3 +1,9 @@
+const main = document.querySelector('main')
+
+//header variables
+const headerSearchBar = document.querySelector('#headerSearchInput')
+const headerSearchMore = document.querySelector('.header-search-more')
+
 //dropdown menu variables
 const dropDownMenuButton = document.querySelector('#dropDownMenuBtN')
 const dropDownMenu = document.querySelector('.dropdown-menu-left')
@@ -9,7 +15,20 @@ const quitaddBtn = document.querySelector('#AddQuitBtn')
 
 const addToCartButtons = document.querySelectorAll('button')
 
+//header events
+
+headerSearchBar.addEventListener('click', () => {
+  headerSearchMore.classList.remove('header-search-more-hidden')
+  headerSearchMore.classList.toggle('header-search-more-show')
+})
+
+main.addEventListener('click', () => {
+  headerSearchMore.classList.remove('header-search-more-show')
+  headerSearchMore.classList.add('header-search-more-hidden')
+})
+
 //dropdown menu events
+
 dropDownMenuButton.addEventListener('click', () => {
   dropDownMenu.classList.toggle('dropdown-menu-left-show')
   mainContent.classList.toggle('main-content-dropdown')
