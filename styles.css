@@ -51,11 +51,32 @@ header {
     border-radius: 5px;
     display: flex;
     justify-content: flex-start;
+    width: 100%;
+    max-width: 700px;
+}
+
+.header-search i {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 #headerSearchInput {
     background-color: var(--gray-search);
     border: none;
+    outline: none;
+    width: 100%;
+    max-width: 700px;
+}
+
+#headerSearchInput::placeholder {
+    color: var(--gray-dark);
+    font-size: .9rem;
+}
+
+#headerSearchInput::-webkit-search-cancel-button {
+    color: var(--gray-dark);
+    font-size: 1.5rem;
+    cursor: pointer;
 }
 
 .header-zipcode {
@@ -76,6 +97,11 @@ header {
     background-color: var(--gray-light);
     padding: 15px 25px;
     border-radius: 25px;
+    cursor: pointer;
+}
+
+.header-shopping-cart:hover {
+    background-color: var(--gray-hover);
 }
 
 .header-shopping-cart i {
@@ -85,6 +111,39 @@ header {
 .header-shopping-cart p {
     margin: 0px;
     font-weight: 600;
+}
+
+.header-search-more-suggestions {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header-search-more-suggestion {
+    border-radius: 40px;
+    padding: 10px 15px;
+    background-color: var(--gray-hover);
+}
+
+.header-search-more-suggestion a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+
+.header-search-more-suggestion p {
+    margin: 0px;
+    font-size: .9rem;
+}
+
+.header-search-more-suggestion p i {
+    margin-right: 5px;
+}
+
+.header-more-popular-title h2 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--gray-dark);
 }
 
 .dropdown-menu-left {
@@ -419,6 +478,60 @@ header {
     padding: 0;
 }
 
+#mainContentAdd {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: var(--gray-dark);
+}
+
+.main-content-add-text {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 25px;
+}
+
+.main-content-add-text p:nth-child(1) {
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.main-content-add-text p:nth-child(1) span {
+    color: var(--yellow);
+}
+
+.add-more-btn {
+    padding: 10px 20px;
+    font-weight: 600;
+    border-radius: 30px;
+    color: var(--gray-dark);
+    background-color: var(--white);
+    cursor: pointer;
+}
+
+.add-more-btn:hover {
+    background-color: var(--gray-hover);
+}
+
+.main-content-add-quit {
+    position: absolute;
+    right: 200px;
+}
+
+#AddQuitBtn {
+    color: var(--white);
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+#AddQuitBtn:hover {
+    color: var(--gray-hover);
+}
+
 .fresh-vegetables-top {
     display: flex;
     justify-content: space-between;
@@ -516,7 +629,7 @@ header {
     font-weight: 600;
     font-size: .9rem;
     border-radius: 20px;
-    padding: 10px 15px;
+    padding: 10px 20px;
     background-color: var(--green);
     cursor: pointer;
 }
@@ -527,6 +640,14 @@ header {
 
 #addToCartBtn:hover {
     background-color: var(--green-dark);
+}
+
+.btn-large {
+    width: 200px;
+}
+
+.btn-small {
+    width: 90px;
 }
 
 .grocery-price {
