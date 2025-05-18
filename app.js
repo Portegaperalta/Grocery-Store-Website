@@ -1,14 +1,15 @@
-const main = document.querySelector('main')
-
 //header variables
 const headerSearchBar = document.querySelector('#headerSearchInput')
 const headerSearchMore = document.querySelector('.header-search-more')
+const shoppingCartIcon = document.querySelector('.header-shopping-cart-icon')
+const headerShoppingCart = document.querySelector('.header-shopping-cart')
 
 //dropdown menu variables
 const dropDownMenuButton = document.querySelector('#dropDownMenuBtN')
 const dropDownMenu = document.querySelector('.dropdown-menu-left')
 
 //main content variables
+const main = document.querySelector('main')
 const mainContentAdd = document.querySelector('#mainContentAdd')
 const addMoreBtn = document.querySelector('#addMoreBtn')
 const quitaddBtn = document.querySelector('#AddQuitBtn')
@@ -28,6 +29,14 @@ headerSearchBar.addEventListener('click', () => {
 main.addEventListener('click', () => {
   headerSearchMore.classList.remove('header-search-more-show')
   headerSearchMore.classList.add('header-search-more-hidden')
+})
+
+shoppingCartIcon.addEventListener('click', () => {
+  headerShoppingCart.style.display = 'flex'
+})
+
+main.addEventListener('click', () => {
+  headerShoppingCart.style.display = 'none'
 })
 
 //dropdown menu events
