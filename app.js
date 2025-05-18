@@ -13,6 +13,9 @@ const mainContentAdd = document.querySelector('#mainContentAdd')
 const addMoreBtn = document.querySelector('#addMoreBtn')
 const quitaddBtn = document.querySelector('#AddQuitBtn')
 
+const mainContentAddDetails = document.querySelector('.main-content-add-details')
+const quitDetailsBtn = document.querySelector('#quitDetailsBtn')
+
 const addToCartButtons = document.querySelectorAll('button')
 
 //header events
