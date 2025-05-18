@@ -42,3 +42,11 @@ dropDownMenuButton.addEventListener('click', () => {
 quitaddBtn.addEventListener('click', () => {
   mainContentAdd.style.display = 'none'
 })
+
+addMoreBtn.addEventListener('click', () => {
+  mainContentAddDetails.style.display = 'flex'
+})
+
+quitDetailsBtn.addEventListener('click', () => {
+  mainContentAddDetails.style.display = 'none'
+})
