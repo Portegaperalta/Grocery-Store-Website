@@ -878,6 +878,15 @@ input:checked+.slider:before {
     font-weight: 500;
 }
 
+.product-more {
+    position: absolute;
+    z-index: 100;
+    background-color: var(--white);
+    width: 100%;
+}
+
+.product-more-content {}
+
 .fresh-vegetables-top {
     display: flex;
     justify-content: space-between;
