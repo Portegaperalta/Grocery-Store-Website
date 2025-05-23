@@ -1,3 +1,5 @@
+const shoppingCart = []
+
 //header variables
 const headerSearchBar = document.querySelector('#headerSearchInput')
 const headerSearchMore = document.querySelector('.header-search-more')
@@ -59,6 +61,15 @@ addMoreBtn.addEventListener('click', () => {
 quitDetailsBtn.addEventListener('click', () => {
   mainContentAddDetails.style.display = 'none'
 })
+
+// add to cart events
+for (let addToCartButton of addToCartButtons) {
+  addToCartButton.addEventListener('click', () => {
+
+  })
+}
+
+// product click events
 
 for (let groceryBox of groceryBoxes) {
   groceryBox.addEventListener('click', () => {
