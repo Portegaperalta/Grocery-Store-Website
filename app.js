@@ -16,7 +16,9 @@ const quitaddBtn = document.querySelector('#AddQuitBtn')
 const mainContentAddDetails = document.querySelector('.main-content-add-details')
 const quitDetailsBtn = document.querySelector('#quitDetailsBtn')
 const addToCartButtons = document.querySelectorAll('button')
-
+const groceryBoxes = document.querySelectorAll('.grocery-box')
+const productMore = document.querySelector('.product-more')
+const productMoreBackBtn = document.querySelector('#productMoreGobackBtn')
 //header events
 
 headerSearchBar.addEventListener('click', () => {
@@ -56,4 +58,15 @@ addMoreBtn.addEventListener('click', () => {
 
 quitDetailsBtn.addEventListener('click', () => {
   mainContentAddDetails.style.display = 'none'
+})
+
+for (let groceryBox of groceryBoxes) {
+  groceryBox.addEventListener('click', () => {
+    productMore.classList.toggle('product-more-show')
+  })
+}
+
+productMoreBackBtn.addEventListener('click', () => {
+  productMore.classList.remove('product-more-show')
+  productMore.classList.add('product-more-hidden')
 })
